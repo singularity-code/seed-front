@@ -1,7 +1,21 @@
+import { Routes, Route } from 'react-router-dom';
+import LoginPage from './pages/LoginPage';
+import PostListPage from './pages/PostListPage';
+import PostPage from './pages/PostPage';
+import RegisterPage from './pages/RegisterPage';
+import WritePage from './pages/WritePage';
+
 function App() {
-  return (
-    <div>START</div>
-  );
+	return (
+		<Routes>
+      <Route exact path="/" element={<PostListPage/>}/>
+      <Route exact path="/@:username" element={<PostListPage/>}/>
+			<Route path="/login" element={<LoginPage/>} />
+			<Route path="/register" element={<RegisterPage/>} />
+			<Route path="/write" element={<WritePage/>} />
+			<Route path="/@:username/:postId" element={<PostPage/>} />
+		</Routes>
+	);
 }
 
 export default App;
