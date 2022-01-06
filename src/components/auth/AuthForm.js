@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const AuthFormBlock = styled.div``;
 const AuthForm = () => {
-	return <AuthFormBlock>AuthForm</AuthFormBlock>;
+	return <AuthFormBlock>AuthFormBlock</AuthFormBlock>;
 };
 
 export default AuthForm;
