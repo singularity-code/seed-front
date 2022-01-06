@@ -39,6 +39,10 @@ const Footer = styled.div`
 	}
 `;
 
+const ButtonWithMarginTop = styled(Button)`
+	margin-top: 1rem;
+`;
+
 const AuthForm = () => {
 	return (
 		<AuthFormBlock>
@@ -46,10 +50,12 @@ const AuthForm = () => {
 			<form>
 				<StyledInput autoComplete="username" name="username" placeholder="username" />
 				<StyledInput autoComplete="new-password" name="password" placeholder="Password" type="password" />
-				<Button cyan fullWidth>LOGIN</Button>
+				<ButtonWithMarginTop cyan fullWidth>
+					LOGIN
+				</ButtonWithMarginTop>
 			</form>
 			<Footer>
-				<Link to="/signup">REGISTER</Link>
+				<Link to="/register">REGISTER</Link>
 			</Footer>
 		</AuthFormBlock>
 	);
