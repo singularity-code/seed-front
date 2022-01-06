@@ -46,7 +46,7 @@ const AuthForm = () => {
 			<form>
 				<StyledInput autoComplete="username" name="username" placeholder="username" />
 				<StyledInput autoComplete="new-password" name="password" placeholder="Password" type="password" />
-				<Button>LOGIN</Button>
+				<Button cyan fullWidth>LOGIN</Button>
 			</form>
 			<Footer>
 				<Link to="/signup">REGISTER</Link>
